@@ -19,7 +19,8 @@ A sleek, neon-themed budget management tool that helps you track income and expe
 * **API** - [ExchangeRate-API](https://www.exchangerate-api.com/) for currency data.
 
 ## 📸 Screenshots
-*(You can add a screenshot later by placing an image file in your folder)*
+<img width="1898" height="876" alt="image" src="https://github.com/user-attachments/assets/47c55f88-d315-47b3-b738-83d0872cefab" />
+
 
 ## 🛠️ Setup Instructions
 To run this project locally:
