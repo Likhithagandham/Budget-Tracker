@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Budget Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="none,noarchive" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Interactive Budget Tracker</h1>
+        <div class="animated-images">
+            <img src="https://res.cloudinary.com/dcbzaiv33/image/upload/v1741427060/n3-removebg-preview_nrqazc.png" class="image-top-left">
+            <img src="https://res.cloudinary.com/dcbzaiv33/image/upload/v1741427054/n2-removebg-preview_x6yioe.png" class="image-middle-right">
+            <img src="https://res.cloudinary.com/dcbzaiv33/image/upload/v1741427047/n1-removebg-preview_npbsca.png" class="image-bottom-left">
+            <!-- <img src="bottom-right.png" class="image-bottom-right"> -->
+        </div>
+
+        <!-- Income Section -->
+        <div class="input-section">
+            <label for="income">Enter Income (INR): </label>
+            <input type="number" id="income" placeholder="Income in INR">
+        </div>
+
+        <!-- Expense Section -->
+        <div class="input-section">
+            <label for="expense">Enter Expense (INR): </label>
+            <input type="number" id="expense" placeholder="Expense in INR">
+        </div>
+
+        <div class="input-section">
+            <label for="expenseComment">Expense Comment (e.g., Shopping): </label>
+            <input type="text" id="expenseComment" placeholder="What was the expense for?">
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button id="addExpense">Add Expense</button>
+            <button id="reset">Reset</button>
+        </div>
+
+        <!-- Remaining Budget Section -->
+        <div id="remainingBudget">
+            <h2>Remaining Budget: ₹<span id="budgetAmount">0</span></h2>
+        </div>
+
+        <!-- Expense List -->
+        <div class="expense-list">
+            <h3>Expenses</h3>
+            <ul id="expenseList"></ul>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message"></div>
+
+        <!-- API Section for Currency Conversion -->
+        <div class="api-section">
+            <label for="currencySelect">Select Currency to Convert to: </label>
+            <select id="currencySelect">
+                <!-- Dynamically populated currencies will go here -->
+            </select>
+            <button id="fetchExchangeRate">Fetch Currency Exchange Rate</button>
+            <p id="exchangeRate"></p>
+            <p id="convertedBudget"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
